@@ -1,0 +1,51 @@
+STDOUT:
+============================= test session starts =============================
+collecting ... collected 41 items
+
+tests/test_intelligence.py::test_health_score_healthy PASSED             [  2%]
+tests/test_intelligence.py::test_health_score_critical PASSED            [  4%]
+tests/test_intelligence.py::test_health_score_explanation_present PASSED [  7%]
+tests/test_intelligence.py::test_health_score_bounded PASSED             [  9%]
+tests/test_intelligence.py::test_anomaly_no_anomaly PASSED               [ 12%]
+tests/test_intelligence.py::test_anomaly_high_severity PASSED            [ 14%]
+tests/test_intelligence.py::test_anomaly_has_reasons PASSED              [ 17%]
+tests/test_intelligence.py::test_anomaly_disclaimer PASSED               [ 19%]
+tests/test_intelligence.py::test_anomaly_score_bounded PASSED            [ 21%]
+tests/test_intelligence.py::test_assignment_selects_one PASSED           [ 24%]
+tests/test_intelligence.py::test_assignment_excludes_unavailable PASSED  [ 26%]
+tests/test_intelligence.py::test_assignment_no_eligible_returns_none PASSED [ 29%]
+tests/test_intelligence.py::test_assignment_respects_distance PASSED     [ 31%]
+tests/test_intelligence.py::test_assignment_records_pool_size PASSED     [ 34%]
+tests/test_intelligence.py::test_assignment_algorithm_label PASSED       [ 36%]
+tests/test_intelligence.py::test_sha256_bytes PASSED                     [ 39%]
+tests/test_intelligence.py::test_sha256_bytes_different_data PASSED      [ 41%]
+tests/test_intelligence.py::test_verify_file_verified PASSED             [ 43%]
+tests/test_intelligence.py::test_verify_file_mismatch PASSED             [ 46%]
+tests/test_intelligence.py::test_verify_missing_file PASSED              [ 48%]
+tests/test_intelligence.py::test_verify_disclaimer PASSED                [ 51%]
+tests/test_security.py::test_password_hash_not_plaintext PASSED          [ 53%]
+tests/test_security.py::test_password_verify_correct PASSED              [ 56%]
+tests/test_security.py::test_password_verify_wrong PASSED                [ 58%]
+tests/test_security.py::test_password_different_hashes PASSED            [ 60%]
+tests/test_security.py::test_access_token_decode PASSED                  [ 63%]
+tests/test_security.py::test_refresh_token_decode PASSED                 [ 65%]
+tests/test_security.py::test_access_token_wrong_type PASSED              [ 68%]
+tests/test_security.py::test_refresh_token_wrong_type PASSED             [ 70%]
+tests/test_security.py::test_invalid_token_returns_none PASSED           [ 73%]
+tests/test_security.py::test_official_can_assign PASSED                  [ 75%]
+tests/test_security.py::test_inspector_cannot_assign PASSED              [ 78%]
+tests/test_security.py::test_inspector_cannot_make_decision PASSED       [ 80%]
+tests/test_security.py::test_inspector_can_conduct PASSED                [ 82%]
+tests/test_security.py::test_citizen_has_minimal_permissions PASSED      [ 85%]
+tests/test_security.py::test_project_staff_no_audit PASSED               [ 87%]
+tests/test_security.py::test_super_admin_has_all PASSED                  [ 90%]
+tests/test_security.py::test_pmu_no_decision PASSED                      [ 92%]
+tests/test_security.py::test_safe_filename_no_original PASSED            [ 95%]
+tests/test_security.py::test_safe_filename_preserves_extension PASSED    [ 97%]
+tests/test_security.py::test_safe_filename_unique PASSED                 [100%]
+
+============================= 41 passed in 6.94s ==============================
+
+STDERR:
+
+Return code: 0
